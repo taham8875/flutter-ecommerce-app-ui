@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app_ui/models/cart.dart';
 import 'package:flutter_ecommerce_app_ui/pages/cart_page.dart';
 import 'package:flutter_ecommerce_app_ui/pages/home_page.dart';
+import 'package:flutter_ecommerce_app_ui/pages/intro_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MainApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => Cart(),
       builder: (context, child) => MaterialApp(
-        home: const HomePage(),
+        home: const IntroPage(),
         routes: {
           '/home': (context) => const HomePage(),
           '/cart': (context) => const CartPage(),
